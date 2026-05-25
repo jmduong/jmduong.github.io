@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Software Engineer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid #1e293b;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #cbd5e1;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #0ea5e9;
+    }
+
+    .btn-secondary {
+      border: 1px solid #475569;
+    }
+
+    .btn-secondary:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .profile-circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      font-weight: bold;
+      color: white;
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      color: #38bdf8;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.9rem;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      max-width: 800px;
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+    }
+
+    .project-image {
+      height: 180px;
+      background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tech {
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      padding: 12px 20px;
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h2 {
+        font-size: 2.8rem;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      .profile-circle {
+        width: 220px;
+        height: 220px;
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1>Your Name</h1>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="section-title">Software Engineer</p>
+
+      <h2>Building Modern Software Experiences</h2>
+
+      <p>
+        I create scalable applications, immersive experiences,
+        and polished interfaces with a focus on performance,
+        usability, and clean architecture.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="profile-circle">
+      YN
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about">
+      <p class="section-title">About</p>
+
+      <h2 class="section-heading">Who I Am</h2>
+
+      <p>
+        I'm a software engineer passionate about full stack development,
+        AR/VR/XR applications, developer tooling, and modern web technologies.
+        I enjoy building systems that are both visually polished and technically robust.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-title">Portfolio</p>
+
+      <h2 class="section-heading">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-image"></div>
+
+          <div class="project-content">
+            <h3>XR Interactive App</h3>
+
+            <p>
+              Built immersive AR/VR experiences with real-time rendering,
+              interaction systems, and optimized performance.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech">Unity</span>
+              <span class="tech">C#</span>
+              <span class="tech">OpenXR</span>
+            </div>
+
+            <a href="#">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"></div>
+
+          <div class="project-content">
+            <h3>Analytics Dashboard</h3>
+
+            <p>
+              Developed a responsive full stack dashboard with APIs,
+              authentication, and dynamic data visualization.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech">React</span>
+              <span class="tech">Node.js</span>
+              <span class="tech">PostgreSQL</span>
+            </div>
+
+            <a href="#">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"></div>
+
+          <div class="project-content">
+            <h3>Automation Tooling</h3>
+
+            <p>
+              Created internal tooling and automation systems
+              to improve developer productivity and workflows.
+            </p>
+
+            <div class="tech-stack">
+              <span class="tech">Python</span>
+              <span class="tech">Docker</span>
+              <span class="tech">TypeScript</span>
+            </div>
+
+            <a href="#">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <p class="section-title">Expertise</p>
+
+      <h2 class="section-heading">Skills & Technologies</h2>
+
+      <div class="skills-grid">
+        <div class="skill">JavaScript</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Python</div>
+        <div class="skill">C#</div>
+        <div class="skill">Unity</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Git</div>
+        <div class="skill">AWS</div>
+        <div class="skill">REST APIs</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <p class="section-title">Contact</p>
+
+      <h2 class="section-heading">Let's Work Together</h2>
+
+      <p>
+        Feel free to reach out regarding software engineering opportunities,
+        freelance work, or collaborations.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+        <a href="mailto:youremail@example.com" class="btn btn-primary">
+          Email Me
+        </a>
+
+        <a href="https://github.com/yourusername" class="btn btn-secondary">
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/yourusername" class="btn btn-secondary">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Your Name | Software Engineer Portfolio
+  </footer>
+
+</body>
+</html>
