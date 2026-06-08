@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CalcFlow - a VR 3D Graphing Calculator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      border: 1px solid #1e293b;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>CalcFlow - a VR 3D Graphing Calculator</h1>
+
+    <p>
+      A VR 3D graphing calculator that lets users explore linear math concepts
+      in an immersive environment, where equations are entered through an 
+      interactive calculator interface and instantly visualized as dynamic graphs 
+      on x, y, and z axes. It enables users to manipulate variables in real time, 
+      view geometric relationships in three dimensions, and learn core linear 
+      algebra and function behavior through spatial, hands-on interaction rather
+      than traditional 2D graphs.
+    </p>
+
+    <div class="skills">
+      <div class="skill">Unity</div>
+      <div class="skill">C#</div>
+    </div>
+
+    <div class="gallery">
+      <img src="Icon.png" alt="Icon">
+      <img src="images/vr2.png" alt="VR Project Image">
+      <img src="images/vr3.png" alt="VR Project Image">
+    </div>
+
+    <a href="../../index.html" class="back-button">
+      ← Back to Portfolio
+    </a>
+
+  </div>
+
+</body>
+</html>
