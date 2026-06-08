@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Colored Advance - a 3D 2048 Mobile Game</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      border: 1px solid #1e293b;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Colored Advance - a 3D 2048 Mobile Game</h1>
+
+    <p>
+      Colored Advance is a mobile puzzle game that reimagines the classic mechanics of 2048 in a 3D space. 
+      Instead of merging numbered tiles, players combine blocks based on matching colors, adding a visual
+      and spatial twist to the original formula. The gameplay focuses on sliding and rotating pieces within 
+      a three-dimensional grid, requiring players to think not only about matches and positioning, but also
+      depth and perspective. The result is a more dynamic, visually driven puzzle experience that builds on 
+      the simplicity of 2048 while introducing new layers of strategy through color-based merging and 3D movement.
+    </p>
+
+    <div class="skills">
+      <div class="skill">Unity</div>
+      <div class="skill">C#</div>
+      <div class="skill">Mobile</div>
+      <div class="skill">Android</div>
+    </div>
+
+    <div class="gallery">
+      <img src="Icon.png" alt="Icon">
+      <img src="images/vr2.png" alt="VR Project Image">
+      <img src="images/vr3.png" alt="VR Project Image">
+    </div>
+
+    <a href="../../index.html" class="back-button">
+      ← Back to Portfolio
+    </a>
+
+  </div>
+
+</body>
+</html>
